@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore exciting career opportunities at The Nook Restaurant. Join our team and discover life at The Nook!">
+    <meta name="keywords" content="The Nook Restaurant, Careers, Jobs, Kitchen Staff, Waitstaff, Barista">
+    <meta name="robots" content="index, follow">
+    <title>The Nook Restaurant - career</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #ff7f00;
+            --primary-color-dark: #cc6600;
+            --secondary-color: #000;
+            --secondary-color-light: #1a1a1a;
+            --accent-color: #ffb347;
+            --light-color: #fff;
+            --text-muted: #aaa;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--light-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar-brand {
+            color: var(--light-color) !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--light-color) !important;
+            font-weight: 500;
+            margin: 0 8px;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            background-color: var(--light-color);
+            color: var(--primary-color) !important;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('img/hero-bg.jpg') no-repeat center center/cover;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+            color: var(--light-color);
+            margin-bottom: 30px;
+        }
+
+        .hero-section .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-section .btn-primary:hover {
+            background-color: var(--primary-color-dark);
+        }
+
+        /* Career Opportunities */
+        #jobs {
+            background-color: var(--secondary-color-light);
+            padding: 60px 0;
+        }
+
+        #jobs h2 {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        #jobs p {
+            color: var(--text-muted);
+        }
+
+        .card {
+            background-color: var(--secondary-color);
+            border: 1px solid var(--accent-color);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-title {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: var(--text-muted);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-color-dark);
+            color: var(--light-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color-light);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 2px solid var(--primary-color);
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        /* Modal */
+        .modal-content {
+            background-color: var(--secondary-color-light);
+            color: var(--light-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .modal-header {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+
+        .btn-close {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+
+        .btn-close:hover {
+            background-color: var(--primary-color-dark);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand" aria-label="Home">
+                <img src="img/logo.jpg" alt="The Nook Logo" class="me-2" style="max-height: 50px;">
+                The Nook Restaurant
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link" aria-label="Home">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link" aria-label="About">About</a></li>
+                    <li class="nav-item"><a href="service.html" class="nav-link" aria-label="Services">Service</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link" aria-label="Menu">Menu</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Pages">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="team.html" class="dropdown-item" aria-label="Our Team">Our Team</a></li>
+                            <li><a href="testimonial.html" class="dropdown-item" aria-label="Testimonial">Testimonial</a></li>
+                            <li><a href="career.html" class="dropdown-item active" aria-label="Career">Career</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" aria-label="Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center text-light py-5">
+        <div class="container">
+            <h1 class="display-4">Join Our Team</h1>
+            <p class="lead">Explore exciting career opportunities at The Nook Restaurant.</p>
+            <a href="#jobs" class="btn btn-primary btn-lg">View Openings</a>
+        </div>
+    </header>
+
+    <!-- Career Opportunities -->
+    <section id="jobs" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Current Openings</h2>
+            <p class="text-center mb-5">We are looking for passionate individuals to join our growing team. Apply now!</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/staff.jpg" alt="Kitchen Staff preparing food" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kitchen Staff</h5>
+                            <p class="card-text">Help create delicious meals and maintain our high standards.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/waitstaff.jpg" alt="Waitstaff serving customers" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Waitstaff</h5>
+                            <p class="card-text">Deliver excellent service and make every experience memorable.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/barista.jpg" alt="Barista preparing coffee" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Barista</h5>
+                            <p class="card-text">Show off your coffee-making skills and engage with customers warmly.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="applyModalLabel">Apply Now</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="applicationForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="position" class="form-label">Position Applied For</label>
+                            <select class="form-select" id="position" required>
+                                <option value="kitchen">Kitchen Staff</option>
+                                <option value="waitstaff">Waitstaff</option>
+                                <option value="barista">Barista</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="resume" class="form-label">Upload Resume</label>
+                            <input type="file" class="form-control" id="resume" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                    <div class="alert alert-success mt-3" style="display: none;" id="successMessage">
+                        Your application has been submitted successfully!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 The Nook Restaurant. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById("applicationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("successMessage").style.display = "block";
+        });
+    </script>
+</body>
+
+</html>
+
