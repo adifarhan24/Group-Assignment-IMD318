@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restoran - Bootstrap Restaurant Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0 d-flex align-items-center">
+    <img src="img/logo.jpg" alt="The Nook Logo" class="img-fluid me-2" style="max-height: 50px;">
+    <h1 class="text-primary m-0"></i>The Nook Restaurant</h1>
+    
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="menu.html" class="nav-item nav-link active">Menu</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                 <a href="career.html"
+class="dropdown-item">Career</a>
+                            </div>
+                        </div>
+
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Food Menu</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+         
+
+       
+ <!-- Menu Start -->
+  
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+            <h1 class="mb-5">Most Popular Items</h1>
+        </div>
+        <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+            <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                <li class="nav-item">
+                    <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                        <i class="fa fa-utensils fa-2x text-primary"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Popular</small>
+                            <h6 class="mt-n1 mb-0">Meals</h6>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                        <i class="fa fa-hamburger fa-2x text-primary"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Special</small>
+                            <h6 class="mt-n1 mb-0">Lunch</h6>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                        <i class="fa fa-coffee fa-2x text-primary"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Refreshingly</small>
+                            <h6 class="mt-n1 mb-0">Drinks</h6>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <!-- Meals Section -->
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane fade show p-0 active">
+                                <div class="row g-4">
+                                    <!-- Chicken Shawarma -->
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/shawarma.jpg" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Chicken Shawarma</span>
+                                                    <span class="text-primary">RM15.90</span>
+                                                </h5>
+                                                <small class="fst-italic">The Nook Meals</small>
+                                                <button class="btn btn-primary mt-3 add-to-cart" data-item="Chicken Shawarma" data-price="15.90">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Nasi Lemak -->
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/nasilemak.jpg" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Nasi Lemak</span>
+                                                    <span class="text-primary">RM5.90</span>
+                                                </h5>
+                                                <small class="fst-italic">The Nook Meals</small>
+                                                <button class="btn btn-primary mt-3 add-to-cart" data-item="Nasi Lemak" data-price="5.90">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Pancake Paradise -->
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/pancake.jpg" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Pancake Paradise</span>
+                                                    <span class="text-primary">RM8.90</span>
+                                                </h5>
+                                                <small class="fst-italic">The Nook Meals</small>
+                                                <button class="btn btn-primary mt-3 add-to-cart" data-item="Pancake Paradise" data-price="8.90">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Smoothie Bowls -->
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/smoothie.jpg" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Smoothie Bowls</span>
+                                                    <span class="text-primary">RM10.90</span>
+                                                </h5>
+                                                <small class="fst-italic">The Nook Meals</small>
+                                                <button class="btn btn-primary mt-3 add-to-cart" data-item="Smoothie Bowls" data-price="10.90">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Set Chicken Satay -->
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/satay.jpg" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Set Chicken Satay</span>
+                                                    <span class="text-primary">RM9.90</span>
+                                                </h5>
+                                                <small class="fst-italic">The Nook Meals</small>
+                                                <button class="btn btn-primary mt-3 add-to-cart" data-item="Set Chicken Satay" data-price="9.90">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Bread With Mushroom Soup -->
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/bread1.jpg" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Bread With Mushroom Soup</span>
+                                                    <span class="text-primary">RM6.90</span>
+                                                </h5>
+                                                <small class="fst-italic">The Nook Meals</small>
+                                                <button class="btn btn-primary mt-3 add-to-cart" data-item="Bread With Mushroom Soup" data-price="6.90">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Strawberry Waffle -->
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/waffle.jpg" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Strawberry Waffle</span>
+                                                    <span class="text-primary">RM8.90</span>
+                                                </h5>
+                                                <small class="fst-italic">The Nook Meals</small>
+                                                <button class="btn btn-primary mt-3 add-to-cart" data-item="Strawberry Waffle" data-price="8.90">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Sausage Bread -->
+                                    <div class="col-lg-6">
+                                        <div class="d-flex align-items-center">
+                                            <img class="flex-shrink-0 img-fluid rounded" src="img/sausage bread.jpg" alt="" style="width: 80px;">
+                                            <div class="w-100 d-flex flex-column text-start ps-4">
+                                                <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                    <span>Sausage Bread</span>
+                                                    <span class="text-primary">RM10.50</span>
+                                                </h5>
+                                                <small class="fst-italic">The Nook Meals</small>
+                                                <button class="btn btn-primary mt-3 add-to-cart" data-item="Sausage Bread" data-price="10.50">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Lunch Section -->
+<div id="tab-2" class="tab-pane fade show p-0 active">
+    <div class="row g-4">
+        <!-- Chicken Briyani -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/nasi arab.jpeg" alt="" style="width: 100px;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Chicken Briyani</span>
+                        <span class="text-primary">RM20.00</span>
+                    </h5>
+                    <small class="fst-italic">Special Lunch</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Chicken Briyani" data-price="20.00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fish & Chips -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/fish & chips.jpeg" alt="" style="width: 100px;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Fish & Chips</span>
+                        <span class="text-primary">RM15.90</span>
+                    </h5>
+                    <small class="fst-italic">Special Lunch</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Fish & Chips" data-price="15.90">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Seafood Spaghetti -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/spagetthi seafood.jpeg" alt="" style="width: 100px;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Seafood Spaghetti</span>
+                        <span class="text-primary">RM19.00</span>
+                    </h5>
+                    <small class="fst-italic">Special Lunch</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Seafood Spaghetti" data-price="19.00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Hot Pot Sizzling -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/sizzling.jpg" alt="" style="width: 100px;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Hot Pot Sizzling</span>
+                        <span class="text-primary">RM18.80</span>
+                    </h5>
+                    <small class="fst-italic">Special Lunch</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Hot Pot Sizzling" data-price="18.80">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Chicken Chop -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/chicken chop.jpeg" alt="" style="width: 100px;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Chicken Chop</span>
+                        <span class="text-primary">RM17.80</span>
+                    </h5>
+                    <small class="fst-italic">Special Lunch</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Chicken Chop" data-price="17.80">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Smoked Duck Spaghetti -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/spagetthi.jpeg" alt="" style="width: 100px;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Smoked Duck Spaghetti</span>
+                        <span class="text-primary">RM16.00</span>
+                    </h5>
+                    <small class="fst-italic">Special Lunch</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Smoked Duck Spaghetti" data-price="16.00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Lamb Chop -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/lamb chop.jpg" alt="" style="width: 100px;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Lamb Chop</span>
+                        <span class="text-primary">RM20.90</span>
+                    </h5>
+                    <small class="fst-italic">Special Lunch</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Lamb Chop" data-price="20.90">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Claypot Chicken Rice -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/claypot.jpg" alt="" style="width: 100px;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Claypot Chicken Rice</span>
+                        <span class="text-primary">RM22.00</span>
+                    </h5>
+                    <small class="fst-italic">Special Lunch</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Claypot Chicken Rice" data-price="22.00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Drinks Section -->
+<div id="tab-3" class="tab-pane fade show p-0">
+    <div class="row g-4">
+        <!-- Caramel Macchiato -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/caramelmacchiato.jpg" alt="" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Caramel Macchiato</span>
+                        <span class="text-primary">RM13.50</span>
+                    </h5>
+                    <small class="fst-italic">Refreshing Drinks</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Caramel Macchiato" data-price="13.50">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Latte Coffee -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/latte.jpg" alt="" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Latte Coffee</span>
+                        <span class="text-primary">RM11.50</span>
+                    </h5>
+                    <small class="fst-italic">Refreshing Drinks</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Latte Coffee" data-price="11.50">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Boba Matcha -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/bobagreentea.jpg" alt="" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Boba Matcha</span>
+                        <span class="text-primary">RM12.70</span>
+                    </h5>
+                    <small class="fst-italic">Refreshing Drinks</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Boba Matcha" data-price="12.70">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Irish Espresso Coffee -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/espresso.jpg" alt="" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Irish Espresso Coffee</span>
+                        <span class="text-primary">RM10.50</span>
+                    </h5>
+                    <small class="fst-italic">Refreshing Drinks</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Irish Espresso Coffee" data-price="10.50">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Iced Matcha -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/icedgreentea.jpg" alt="" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Iced Matcha</span>
+                        <span class="text-primary">RM9.00</span>
+                    </h5>
+                    <small class="fst-italic">Refreshing Drinks</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Iced Matcha" data-price="9.00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Matcha Frappe -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/matchafrape.jpg" alt="" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Matcha Frappe</span>
+                        <span class="text-primary">RM15.00</span>
+                    </h5>
+                    <small class="fst-italic">Refreshing Drinks</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Matcha Frappe" data-price="15.00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!--lychee Soda -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/lychee.jpg" alt="" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>lychee Soda</span>
+                        <span class="text-primary">RM10.00</span>
+                    </h5>
+                    <small class="fst-italic">Refreshing Drinks</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="lychee Soda" data-price="10.00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Iced Lemon Tea -->
+        <div class="col-lg-6">
+            <div class="d-flex align-items-center">
+                <img class="flex-shrink-0 img-fluid rounded" src="img/icedtea.jpg" alt="" style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="w-100 d-flex flex-column text-start ps-4">
+                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                        <span>Iced Lemon Tea</span>
+                        <span class="text-primary">RM8.50</span>
+                    </h5>
+                    <small class="fst-italic">Refreshing Drinks</small>
+                    <button class="btn btn-primary mt-3 add-to-cart" data-item="Matcha Frappe" data-price=".00">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Cart Summary -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <h2 class="text-center">Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-warning" onclick="clearCart()">Clear Cart</button>
+            <h4>Total: <span id="cart-total">RM0.00</span></h4>
+        </div>
+        <button class="btn btn-success mt-3" id="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+</div>
+
+<!-- Receipt Modal -->
+<div id="receipt-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Receipt</h5>
+                <button type="button" class="btn-close" onclick="closeModal()"></button>
+            </div>
+            <div class="modal-body">
+                <div id="receipt-content"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="printReceipt()">Print Receipt</button>
+                <button class="btn btn-secondary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success Modal -->
+<div id="success-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Purchase Successful</h5>
+                <button type="button" class="btn-close" onclick="closeSuccessModal()"></button>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for your purchase! Your receipt will appear shortly.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="showReceipt()">View Receipt</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let cart = [];
+
+    // Function to add item to cart
+    function addToCart(item, price) {
+        const existingItem = cart.find(cartItem => cartItem.item === item);
+        if (existingItem) {
+            existingItem.quantity++;
+            existingItem.totalPrice = existingItem.quantity * existingItem.price;
+        } else {
+            cart.push({ item, price, quantity: 1, totalPrice: price });
+        }
+        updateCartDisplay();
+    }
+
+    // Update cart display
+    function updateCartDisplay() {
+        const cartItemsContainer = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+
+        cart.forEach((cartItem, index) => {
+            const cartItemElement = document.createElement('div');
+            cartItemElement.classList.add('d-flex', 'justify-content-between', 'mb-2');
+            cartItemElement.innerHTML = `
+                <span>${cartItem.item} x ${cartItem.quantity} - RM${cartItem.totalPrice.toFixed(2)}</span>
+                <button class="btn btn-danger btn-sm ms-3" onclick="removeFromCart(${index})">Remove</button>
+                <button class="btn btn-info btn-sm ms-2" onclick="increaseQuantity(${index})">+</button>
+                <button class="btn btn-info btn-sm ms-2" onclick="decreaseQuantity(${index})">-</button>
+            `;
+            cartItemsContainer.appendChild(cartItemElement);
+            total += cartItem.totalPrice;
+        });
+
+        cartTotal.innerText = `RM${total.toFixed(2)}`;
+    }
+
+    // Function to remove item from cart
+    function removeFromCart(index) {
+        cart.splice(index, 1);
+        updateCartDisplay();
+    }
+
+    // Function to increase item quantity
+    function increaseQuantity(index) {
+        cart[index].quantity++;
+        cart[index].totalPrice = cart[index].quantity * cart[index].price;
+        updateCartDisplay();
+    }
+
+    // Function to decrease item quantity
+    function decreaseQuantity(index) {
+        if (cart[index].quantity > 1) {
+            cart[index].quantity--;
+            cart[index].totalPrice = cart[index].quantity * cart[index].price;
+            updateCartDisplay();
+        }
+    }
+
+    // Function to clear the cart
+    function clearCart() {
+        cart = [];
+        updateCartDisplay();
+    }
+
+    // Function to handle checkout
+    function checkout() {
+        if (cart.length === 0) {
+            alert('Your cart is empty!');
+            return;
+        }
+
+        // Show success modal
+        const successModal = document.getElementById('success-modal');
+        successModal.style.display = 'block';
+    }
+
+    // Function to show receipt
+    function showReceipt() {
+        const receiptContent = document.getElementById('receipt-content');
+        receiptContent.innerHTML = '';
+
+        let receiptHTML = '<h5>Receipt</h5><ul>';
+        let total = 0;
+
+        cart.forEach(cartItem => {
+            receiptHTML += `<li>${cartItem.item} x ${cartItem.quantity} - RM${cartItem.totalPrice.toFixed(2)}</li>`;
+            total += cartItem.totalPrice;
+        });
+
+        receiptHTML += `</ul><h4>Total: RM${total.toFixed(2)}</h4>`;
+        receiptContent.innerHTML = receiptHTML;
+
+        // Close success modal and show receipt modal
+        closeSuccessModal();
+        const receiptModal = document.getElementById('receipt-modal');
+        receiptModal.style.display = 'block';
+    }
+
+    // Function to close success modal
+    function closeSuccessModal() {
+        const successModal = document.getElementById('success-modal');
+        successModal.style.display = 'none';
+    }
+
+    // Function to close receipt modal
+    function closeModal() {
+        const receiptModal = document.getElementById('receipt-modal');
+        receiptModal.style.display = 'none';
+    }
+
+    // Function to print the receipt
+    function printReceipt() {
+        const receiptContent = document.getElementById('receipt-content').innerHTML;
+        const newWindow = window.open('', '_blank');
+        newWindow.document.write('<html><body>' + receiptContent + '</body></html>');
+        newWindow.document.close();
+        newWindow.print();
+    }
+
+    // Event listeners for all "Add to Cart" buttons
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', () => {
+            const item = button.getAttribute('data-item');
+            const price = parseFloat(button.getAttribute('data-price'));
+            addToCart(item, price);
+        });
+    });
+</script>
+
+
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="">Reservation</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>44, Jalan Cempaka 1/2, Bandar Amanjaya, 08000 Sungai Petani, Kedah</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>TheNookRestaurant@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>10AM - 10PM</p>
+                        <h5 class="text-light fw-normal">Sunday</h5>
+                        <p>10AM - 9PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <p>Stay Connected With Us.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">The Nook Restaurant</a>, All Right Reserved. 
+							
+>
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
